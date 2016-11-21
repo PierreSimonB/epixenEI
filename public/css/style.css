@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+header, main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+	
+	.titre{
+		font-size : 100%;
+	}
+	
+
+.slider2 {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.slider2.fullscreen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider2.fullscreen ul.slides2 {
+  height: 100%;
+}
+
+.slider2.fullscreen ul.indicators {
+  z-index: 2;
+  bottom: 30px;
+}
+
+.slider2 .slides2 {
+  background-color: #9e9e9e;
+  margin: 0;
+  height: 400px;
+}
+
+.slider2 .slides2 li {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+}
+
+.slider2 .slides2 li img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider2 .slides2 li .caption {
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  opacity: 0;
+}
+
+.slider2 .slides2 li .caption p {
+  color: #e0e0e0;
+}
+
+.slider2 .slides2 li.active {
+  z-index: 2;
+}
+
+.slider2 .indicators {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.slider2 .indicators .indicator-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 12px;
+  background-color: #e0e0e0;
+  transition: background-color .3s;
+  border-radius: 50%;
+}
+
+.slider2 .indicators .indicator-item.active {
+  background-color: #9ccc65 ;
+}
+	
+	.ligne 
+		   {
+	   	   background			  : transparent;
+		   border-color			  : silver;
+		   border-width			  : 0 0 1px;
+		   border-style			  : solid;
+		   }
+                   
+                   .titleproduit{
+                      font-size:200%; 
+                      line-height: 130%;
+                   }
+                    .prixproduit{
+                      font-size:150%; 
+                   }
