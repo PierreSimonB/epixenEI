@@ -22,8 +22,8 @@ class AdminController extends Controller
     {
   
 
-$quisommesnous = quisommesnous::find(1);
-      return view('admin.accueiladmin.accueiladmin')->with('quisommesnous',$quisommesnous);
+
+      return view('admin.accueiladmin.accueiladmin');
     
     }
 

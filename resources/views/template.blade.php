@@ -21,7 +21,7 @@
 <ul class="right hide-on-med-and-down">
        <li><a href="{{ url('accueil') }}"><i class="material-icons left">clear_all</i>Accueil</a></li>
                
-                    <li><a href="{{url('agenda')}}">Agenda</a></li>
+                    <li><a href="{{url('agenda/all')}}">Agenda</a></li>
                     <li><a href="{{url('club')}}">Club</a></li>
                                      <li><a href="{{url('bureau')}}">Bureau</a></li> 
                                      <li><a href="{{url('reglement')}}">Tarif</a></li>

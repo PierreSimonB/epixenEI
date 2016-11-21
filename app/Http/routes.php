@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 
-
+Route::get('agenda/all', 'AgendaController@all');
 
 Route::resource('accueil', 'AccueilController');
 
@@ -44,6 +44,20 @@ Route::resource('gymnase', 'GymnaseController');
 Route::resource('materiel', 'MaterielController');
 Route::resource('technologie', 'TechnologieController');
 Route::resource('galerie', 'GalerieController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::post('/envoyer', function (Request $request) {
 
     $data = array('mess' => $request->input('mess'), 'email' => $request->input('email'), 'nom' => $request->input('nom'), 'prenom' => $request->input('prenom'), 'telephone' => $request->input('telephone'));

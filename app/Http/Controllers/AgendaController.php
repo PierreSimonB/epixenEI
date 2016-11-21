@@ -15,8 +15,13 @@ class AgendaController extends Controller
      */
     public function index()
     {
-           return view('page.agenda.agenda');
+           return view('admin.agenda.agenda');
     }
+    
+public function all()
+{
+               return view('page.agenda.agenda');
+}
 
     /**
      * Show the form for creating a new resource.
