@@ -25,6 +25,13 @@ Route::get('/', function () {
 
 
 Route::get('agenda/all', 'AgendaController@all');
+Route::get('club/all', 'AgendaController@all');
+Route::get('bureau/all', 'AgendaController@all');
+Route::get('reglement/all', 'AgendaController@all');
+Route::get('gymnase/all', 'AgendaController@all');
+Route::get('materiel/all', 'AgendaController@all');
+Route::get('technologie/all', 'AgendaController@all');
+Route::get('galerie/all', 'AgendaController@all');
 
 Route::resource('accueil', 'AccueilController');
 
