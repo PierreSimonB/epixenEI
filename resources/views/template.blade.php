@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <title>Club d'Escalade Horizon Vertical</title>
+        <title>Epixen industrie</title>
 
         <!-- Fichier CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,24 +12,126 @@
     </head>
 
     <body>
+       
+        
+      
+        
      
+      
+
          <nav>
       <!-- menu page pleine !-->
-            <div class="nav-wrapper   green darken-1" >
-                
-                <a class="brand-logo"  style="width:3%;"><img src="images/Logo.jpg" class="responsive-img"/> </a>
-<ul class="right hide-on-med-and-down">
-       <li><a href="{{ url('accueil') }}"><i class="material-icons left">clear_all</i>Accueil</a></li>
+      
+           <!-- Dropdown Structure -->
+            <!-- Moteurs !-->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Moteurs universels</a></li>
+  <li><a href="#!">Moteurs à aimants permanents</a></li>
+  <li><a href="#!">Moteurs électriques aspirants</a></li>
+  <li><a href="#!">Moteurs asynchrone</a></li>
+  <li><a href="#!">Moteurs brushless à commutation électronique</a></li>
+  <li><a href="#!">Générateurs synchrones à aimants permanents</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Moteurs</a></li>
+  
+</ul>
+            <!-- Bobinage moteurs!-->
+<ul id="dropdown2" class="dropdown-content">
+  <li><a href="#!">Rotors bobinés à collecteur</a></li>
+  
+ 
+  
+  <li class="divider"></li>
+  <li><a href="#!">Bobinages Moteurs</a></li>
+</ul>
+            <!-- Aimants Permanents !-->
+<ul id="dropdown3" class="dropdown-content">
+  <li><a href="#!">Aimant Ferrite</a></li>
+  <li><a href="#!">Aimant Néodyme</a></li>
+  <li><a href="#!">Aimant Samarium</a></li>
+  <li><a href="#!">Aimant Alnico</a></li>
+  <li><a href="#!">Poudre Magnétique</a></li>
+  <li><a href="#!">Capteur Magnétique</a></li>
+  <li><a href="#!">Ferrite Doux</a></li>
+  <li><a href="#!">Elastomère magnétique</a></li>
+  
+  <li class="divider"></li>
+  <li><a href="#!">Aimants Permanents</a></li>
+  
+</ul>
+             <!-- Reducteurs !-->
+<ul id="dropdown4" class="dropdown-content">
+  <li><a href="#!">Engrenage</a></li>
+  <li><a href="#!">Roue dentée</a></li>
+  <li><a href="#!">Roue dentée conique</a></li>
+  <li><a href="#!">Poulie</a></li>
+  <li><a href="#!">Vis sans fin</a></li>
+  <li><a href="#!">Denture interne</a></li>
+  <li><a href="#!">Arbre denté</a></li>
+  <li><a href="#!">Rectification</a></li>
+  <li><a href="#!">Brochage</a></li>
+  <li><a href="#!">Traitement Thermique</a></li>
+  
+  <li class="divider"></li>
+  <li><a href="#!">Reducteurs</a></li>
+  
+</ul>
+<!-- Divers composant moteurs !-->
+<ul id="dropdown5" class="dropdown-content">
+  <li><a href="#!">Axe Acier</a></li>
+  <li><a href="#!">Isolant Moteur</a></li>
+  <li><a href="#!">Faisceau</a></li>
+  <li><a href="#!">Connection</a></li>
+  <li><a href="#!">Charbon</a></li>
+  
+  
+  <li class="divider"></li>
+  <li><a href="#!">Divers composant moteurs</a></li>
+  
+</ul>
+<!-- Ventilateurs !-->
+<ul id="dropdown6" class="dropdown-content">
+  <li><a href="#!">Ventilateur Plafond</a></li>
+  <li><a href="#!">Ventilateur d'aspiration</a></li>
+
+  <li class="divider"></li>
+  <li><a href="#!">Ventilateurs</a></li>
+  
+</ul>
+      </ul>
+           <ul id="dropdown7" class="dropdown-content">
+  <li><a href="#!">AMC</a></li>
+  <li><a href="#!">IME</a></li>
+  <li><a href="#!">ANFABO</a></li>
+  <li><a href="#!">COMIP</a></li>
+  <li><a href="#!">EVEL</a></li>
+  <li><a href="#!">FAET</a></li>
+  
+  <li class="divider"></li>
+  <li><a href="#!">Sociétes</a></li>
+  
+</ul>
                
-                    <li><a href="{{url('agenda/all')}}">Agenda</a></li>
-                    <li><a href="{{url('club')}}">Club</a></li>
-                                     <li><a href="{{url('bureau')}}">Bureau</a></li> 
-                                     <li><a href="{{url('reglement')}}">Tarif</a></li>
-                                                      <li><a href="{{url('materiel')}}">Matériel</a></li>
-                                                                       <li><a href="{{url('technologie')}}">Technologie</a></li>
-                                                                                        <li><a href="{{url('gymnase')}}">Gymnase</a></li>
-                                                                                                         <li><a href="{{url('galerie')}}">Galerie</a></li>
-                                                                                                              <li><a href="{{url('contact')}}">Contact</a></li>
+<nav>
+    <div style="color: black"   class="nav-wrapper">
+    <a href="acceuil" class="brand-logo">Epixen Industrie</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="{{ url('accueil') }}">Acceuil</a></li>
+      <li><a href="{{ url('quisommesnous') }}">Qui sommes nous ?</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Moteurs<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Bobinages Moteurs<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Aimants Permanents<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Reducteurs<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown6">Ventilateurs<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown5">Divers Composants Moteurs <i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown7">Sociétés<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+      
+       
+      
                    @if (Auth::guest())
                  <!--      <li><a class="dropdown-button" href="#!" data-activates="dropdownuse"><i class="material-icons left">settings</i>Utilisateur<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
@@ -57,7 +159,7 @@
                        @endif
                    <li><a href="{{url('auth/logout')}}"><i class="material-icons left">input</i>Déconnexion</a></li>
                    <li class="divider"></li>
-               </ul> 
+                  </ul> 
                     @endif
 </ul>
 <!-- menu responsive téléphone et tablette !-->
@@ -90,7 +192,38 @@
 <!-- Bouton menu responsive téléphone et tablette !-->
 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 </nav>
-        <!-- fin des menus !-->
+      <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/bob1.JPG"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Bobinage moteur</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/engrenages.JPG"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Roues dentées</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/vissansfin.JPG"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Vis sans fin</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
 
         <!-- contenu !-->
@@ -104,17 +237,22 @@
 
 
 
+
+
+
+
         <!-- Début footer !-->
-        <footer class="page-footer green darken-1" >
+        <footer class="page-footer grey darken-1" >
             <div class="container">
                 <div class="row">
                     <!-- Contact !-->
                     <div class="col l3 s12">
                         <h5 class="white-text">Contact</h5>
                         <p class="grey-text text-lighten-4">
-             Horizon Vertical<br> <br>Damparis Tavaux
-4 bis chemin des écoles<br><br>
-39120 LE DESCHAUX <br><br>cirylbernard@yahoo.fr <br><br>06 64 99 92 32
+                                 Epixen Industrie<br> <br>39100 Gevry
+                                Rue du pommier<br><br>
+                                Tél. : 03.84.710.494<br>
+                                Fax : 03.51.08.15.99
 
 
                         </p>
@@ -124,26 +262,14 @@
                     <!-- Menu !-->
                     <div class="col l3 s12">
                         <h5 class="white-text">Menu</h5>
-                        <ul>
-                       <li><a href="{{ url('accueil') }}">Accueil</a></li>
-                   <li><a href="{{url('produits/all')}}">Actualité</a></li>
-                    <li><a href="{{url('devis')}}">Agenda</a></li>
-                    <li><a href="{{url('contact')}}">Club</a></li>
-                                     <li><a href="{{url('contact')}}">Bureau</a></li>           
-                                     <li><a href="{{url('contact')}}">Règlement</a></li>
-                                                      <li><a href="{{url('contact')}}">Matériel</a></li>
-                                                                       <li><a href="{{url('contact')}}">Technologie</a></li>
-                                                                                        <li><a href="{{url('contact')}}">Gymnase</a></li>
-                                                                                                         <li><a href="{{url('contact')}}">Galerie</a></li>
-               
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
             <!-- Réalisation !-->
-            <div class="footer-copyright green darken-1">
+            <div class="footer-copyright grey darken-1">
                 <div class="container">
-                                        Copyright © 2016 Club d'Escalade Horizon Vertical
+                                        Copyright © 2016 Epixen Industrie
                 </div>
             </div>
         </footer>
@@ -158,7 +284,11 @@
         <script>
 $(".dropdown-button").dropdown();
         </script>
-
+<script>
+        $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+    </script>
         <script>  $('.button-collapse').sideNav({
                 menuWidth: 300, // Default is 240
                 edge: 'right', // Choose the horizontal origin

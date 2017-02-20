@@ -19,19 +19,34 @@
 
 <body>
 <!-- menu grand écran !-->
-<nav>
-<div class="nav-wrapper  grey lighten-1" >
-<!-- Titre en hat à gauche !-->
-<a href="#!" class="brand-logo" style="font-size: 160%">Pannel administrateur</a>
+ <nav>
+      <!-- menu page pleine !-->
+            <div class="nav-wrapper   grey darken-1" >
+                
+         
 <ul class="right hide-on-med-and-down">
-<!-- Accueil !-->
-<li style="text-align: justify;"><a href="{{route('admin.index')}}"><i class="material-icons left">home</i>Accueil</a></li>
-<li style="text-align: justify;"><a href="{{route('agenda.index')}}">Agenda</a></li>
-<!-- Produits !-->
 
-<!-- fin du menu normal et reponsive !-->
+               
+                    <li><a href="{{url('agenda')}}">Agenda</a></li>
+                    <li><a href="{{url('evenement')}}">Evenement</a></li>
+                    <li><a href="{{url('club')}}">Club</a></li>
+                                     <li><a href="{{url('bureau')}}">Bureau</a></li> 
+                                     <li><a href="{{url('reglement')}}">Tarif</a></li>
+                                                      <li><a href="{{url('materiel')}}">Matériel</a></li>
+                                                                       <li><a href="{{url('technologie')}}">Technologie</a></li>
+                                                                                        <li><a href="{{url('gymnase')}}">Gymnase</a></li>
+                                                                                                         <li><a href="{{url('galerie')}}">Galerie</a></li>
+                                                                         
+                 
+</ul>
+<!-- menu responsive téléphone et tablette !-->
+
+<!-- Bouton menu responsive téléphone et tablette !-->
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+</nav>
 
 <!-- Contenu !-->
+
    @yield('content')
 
     </body>

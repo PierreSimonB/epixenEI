@@ -24,92 +24,48 @@ Route::get('/', function () {
 });
 
 
-Route::get('agenda/all', 'AgendaController@all');
-Route::get('club/all', 'AgendaController@all');
-Route::get('bureau/all', 'AgendaController@all');
-Route::get('reglement/all', 'AgendaController@all');
-Route::get('gymnase/all', 'AgendaController@all');
-Route::get('materiel/all', 'AgendaController@all');
-Route::get('technologie/all', 'AgendaController@all');
-Route::get('galerie/all', 'AgendaController@all');
+
 
 Route::resource('accueil', 'AccueilController');
+Route::resource('quisommesnous', 'QuisommesnousController');
 
-
-
-
+Route::resource('aimant', 'AimantController');
+Route::resource('aimantalnico', 'AimantalnicoController');
+Route::resource('aimantferrite', 'AimantferriteController');
+Route::resource('aimantneodyme', 'AimantneodymeController');
+Route::resource('aimantsamarium', 'AimantsamariumController');
+Route::resource('arbredente', 'ArbredenteController');
+Route::resource('axe', 'AxeController');
+Route::resource('bobinagemoteur', 'BobinagemoteurController');
+Route::resource('brochage', 'BrochageController');
+Route::resource('capteurmagnetique', 'CapteurmagnetiqueController');
+Route::resource('charbon', 'CharbonController');
+Route::resource('connection', 'ConnectionController');
+Route::resource('denture', 'DentureController');
+Route::resource('divercomposant', 'DivercomposantController');
+Route::resource('elastomere', 'ElastomereController');
+Route::resource('engrenage', 'EngrenageController');
+Route::resource('faisceau', 'FaisceauController');
+Route::resource('ferrite', 'FerriteController');
+Route::resource('generateur', 'GenerateurController');
+Route::resource('isolantmoteur', 'IsolantmoteurController');
+Route::resource('moteur', 'MoteurController');
+Route::resource('moteuraimantpermanent', 'MoteuraimantpermanentController');
+Route::resource('moteurbrushless', 'MoteurbrushlessController');
+Route::resource('moteurelectrique', 'MoteurelectriqueController');
+Route::resource('moteuruniversel', 'MoteuruniverselController');
+Route::resource('poudremagnetique', 'PoudremagnetiqueController');
+Route::resource('poulie', 'PoulieController');
+Route::resource('rectification', 'RectificaionController');
+Route::resource('reducteur', 'ReducteurController');
+Route::resource('rotor', 'RotorController');
+Route::resource('rouedente', 'RouedenteController');
+Route::resource('rouedenteconique', 'RouedenteconiqueController');
+Route::resource('societe', 'SocieteController');
+Route::resource('traitementthermique', 'TraitementthermiqueController');
+Route::resource('ventilateur', 'VentilateurController');
+Route::resource('ventilateuraspiration', 'VentilateuraspirationController');
+Route::resource('ventilateurplafond', 'VentilateurplafondController');
+Route::resource('vissansfin', 'VissansfinController');
 Route::resource('admin', 'AdminController');
-
-
-
-Route::resource('actualite', 'ActualiteController');
-Route::resource('agenda', 'AgendaController');
-Route::resource('club', 'ClubController');
-Route::resource('bureau', 'BureauController');
-Route::resource('reglement', 'ReglementController');
-Route::resource('gymnase', 'GymnaseController');
-Route::resource('materiel', 'MaterielController');
-Route::resource('technologie', 'TechnologieController');
-Route::resource('galerie', 'GalerieController');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::post('/envoyer', function (Request $request) {
-
-    $data = array('mess' => $request->input('mess'), 'email' => $request->input('email'), 'nom' => $request->input('nom'), 'prenom' => $request->input('prenom'), 'telephone' => $request->input('telephone'));
-    $sujet = $request->input('sujet');
-
-    Mail::send('page.email.contact', $data, function ($message) use ($sujet) {
-
-        $message->from('sauvageot.thomas.pro@gmail.com', 'Escalade');
-        $message->to('sauvageot.thomas.pro@gmail.com')->subject($sujet);
-    });
-
-    if (count(Mail::failures()) > 0) {
-        $request->session()->flash('errormessage', 'Erreur dans l\'envoi du mail.');
-        return redirect('/contact');
-    } else {
-        $request->session()->flash('message', 'Votre mail a été envoyé avec succès.');
-        return redirect('/contact');
-    }
-});
-
-Route::get('/contact', function () {
-  
-    return view('page.contact.contact');
-});
-
-
-
-
-
-Route::auth();
-
-Route::get('/connect', function () {
-
-    return view('auth.login');
-});
-
-Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');
-
-
-
-
-Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
-
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
-
-
 

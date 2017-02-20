@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'commercial-site@jolliet-innovation.fr', 'name' => 'JOLLIET Innovation'],
+    'from' => ['address' => 'contact@epixen.com', 'name' => 'Epixen Industrie'],
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => env('commercial-site@jolliet-innovation.fr'),
+    'username' => env('contact@epixen.com'),
 
     /*
     |--------------------------------------------------------------------------
